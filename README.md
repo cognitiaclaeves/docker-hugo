@@ -1,3 +1,6 @@
+# WARNING
+See the URLs below to access a reusable project. For now, this project is not packaged for reuse for others.
+
 # docker-hugo
 
 Docker image for hugo static page generator (https://gohugo.io)

@@ -6,9 +6,10 @@ fi
 
 src_dir="$(pwd)/blog-data/$1/src"
 
-if [ ! -d "$1" ]; then
-  echo "Directory $1 does not exist."
-  ls "$(pwd)/blog-data"
+if [ ! -d "$src_dir" ]; then
+  echo "Directory $src_dir does not exist."
+  cd blog-data
+  find . -type d | egrep -v -e src -e git
   exit 1
 fi
 
